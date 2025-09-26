@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirtan Kori | Aspiring CISO & Security Researcher</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Load Lucide Icons for aesthetic vectors -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles to enhance the dark aesthetic and typography */
+        :root {
+            --primary-color: #1a202c; /* Tailwind gray-900 equivalent */
+            --secondary-color: #4a5568; /* Tailwind gray-600 equivalent */
+            --accent-color: #63b3ed; /* Tailwind blue-400 equivalent */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-color);
+            color: #e2e8f0; /* Light gray text for high contrast */
+        }
+        .card {
+            background-color: #2d3748; /* Darker card background (gray-700) */
+            border: 1px solid #4a5568;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #63b3ed, #805ad5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen">
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-8">
+
+        <!-- 1. HEADER / HERO SECTION -->
+        <header class="text-center py-10 mb-12 border-b border-gray-700">
+            <h1 class="text-5xl sm:text-7xl font-extrabold mb-2 leading-tight">
+                <span class="text-gradient">KIRTAN KORI</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-400 italic">
+                // Aspiring CISO | Network Security Enthusiast //
+            </p>
+        </header>
+
+        <!-- 2. CORE IDENTITY & ASPIRATION SECTION -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 flex items-center">
+                <i data-lucide="shield-check" class="w-6 h-6 mr-3 text-accent-color"></i>
+                The Path: From Umaria to CISO
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Persona Card -->
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3 text-accent-color">
+                        My Persona: A Monologue
+                    </h3>
+                    <p class="text-gray-300 text-sm leading-relaxed italic">
+                        "I am Kirtan Kumar Kori. Strict, perhaps. Emotional, definitely. A bit of a psycho, they say, because I feel everything intensely. I want my writing—my work—to sound real, smart, and deep, like the raw inner monologue of a teen wrestling with the world. I don't just build, I wrestle with logic, code, and emotion."
+                    </p>
+                </div>
+                <!-- Career Card -->
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3 text-accent-color">
+                        My Trajectory
+                    </h3>
+                    <ul class="space-y-3 text-gray-300 text-sm">
+                        <li class="flex items-start">
+                            <i data-lucide="graduation-cap" class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-amber-400"></i>
+                            B.Tech CSE AIML at SOIT, RGPV (Upcoming).
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="target" class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-red-400"></i>
+                            **Ultimate Goal:** To become a Chief Information Security Officer (CISO).
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="milestone" class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-green-400"></i>
+                            Background: Raised in a rural farmer family; relocated through MCL/WCL transfers.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TECHNICAL SKILLS & PROJECTS SECTION -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">
+                <i data-lucide="zap" class="w-6 h-6 mr-3 text-accent-color"></i>
+                Technical Artifacts
+            </h2>
+
+            <!-- Main Project Card -->
+            <div class="card p-8 rounded-xl mb-6">
+                <h3 class="text-2xl font-bold mb-4 text-purple-400 flex items-center">
+                    <i data-lucide="code-square" class="w-6 h-6 mr-3"></i>
+                    Featured Project: CyberAI_IDS
+                </h3>
+                <p class="mb-4 text-gray-300">
+                    My first venture into security and AI. This is an **Intrusion Detection System** built using machine learning on the rigorous **NSL-KDD dataset**.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 text-sm text-gray-400 ml-4">
+                    <li>**Model:** Successfully trained a **RandomForest Classifier**.</li>
+                    <li>**Stack:** Developed in Google Colab, managed via GitHub.</li>
+                    <li>**Goals:** Currently planning the demo video and PPT for presentation.</li>
+                </ul>
+                <a href="https://github.com/Kirtanx07/CyberAI_IDS" target="_blank" class="inline-flex items-center text-sm font-semibold py-2 px-4 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-200">
+                    <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                    View CyberAI_IDS Repo
+                </a>
+            </div>
+
+            <!-- Skills List -->
+            <div class="flex flex-wrap gap-4 mt-6">
+                <span class="bg-gray-700 text-green-400 px-4 py-2 rounded-full font-medium text-sm border border-green-500/50">
+                    <i data-lucide="terminal" class="w-4 h-4 inline mr-1"></i> Basic Python
+                </span>
+                <span class="bg-gray-700 text-red-400 px-4 py-2 rounded-full font-medium text-sm border border-red-500/50">
+                    <i data-lucide="hard-hat" class="w-4 h-4 inline mr-1"></i> Learning C++
+                </span>
+                <span class="bg-gray-700 text-yellow-400 px-4 py-2 rounded-full font-medium text-sm border border-yellow-500/50">
+                    <i data-lucide="network" class="w-4 h-4 inline mr-1"></i> Network Security
+                </span>
+                <span class="bg-gray-700 text-blue-400 px-4 py-2 rounded-full font-medium text-sm border border-blue-500/50">
+                    <i data-lucide="award" class="w-4 h-4 inline mr-1"></i> Advanced Networking Club
+                </span>
+                <span class="bg-gray-700 text-purple-400 px-4 py-2 rounded-full font-medium text-sm border border-purple-500/50">
+                    <i data-lucide="layers" class="w-4 h-4 inline mr-1"></i> Google Qwiklabs / Arcade
+                </span>
+            </div>
+        </section>
+
+        <!-- 4. CREATIVE & WRITING PROJECTS SECTION -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">
+                <i data-lucide="feather" class="w-6 h-6 mr-3 text-accent-color"></i>
+                Creative Works: Writing the Raw
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3 text-orange-400">
+                        Never Ending Train
+                    </h3>
+                    <p class="text-gray-300 text-sm">
+                        A long-term book project, a childhood story exploring the theme: "Every pained loss comes with a new era of life." This is where my chaotic, poetic, and emotional writing style comes alive.
+                    </p>
+                </div>
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3 text-teal-400">
+                        First-Year Fire
+                    </h3>
+                    <p class="text-gray-300 text-sm">
+                        The story pitch developed for my Google Student Ambassador application. Focused on the intense passion and drive of starting the B.Tech journey.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SOCIAL FOOTER / CONTACT LINKS -->
+        <footer class="pt-8 mt-12 border-t border-gray-700 text-center">
+            <h3 class="text-xl font-semibold mb-4 text-accent-color">
+                Connect with the Process
+            </h3>
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <a href="https://github.com/Kirtanx07" target="_blank" class="hover:text-white transition duration-200" title="GitHub">
+                    <i data-lucide="github" class="w-8 h-8"></i>
+                </a>
+                <a href="https://twitter.com/Kirtan_Kori" target="_blank" class="hover:text-blue-400 transition duration-200" title="Twitter (X)">
+                    <i data-lucide="twitter" class="w-8 h-8"></i>
+                </a>
+                <a href="#" target="_blank" class="hover:text-red-400 transition duration-200" title="Quora">
+                    <i data-lucide="message-square" class="w-8 h-8"></i>
+                </a>
+            </div>
+            <p class="mt-6 text-xs text-gray-500">
+                Built with raw data and code. Saoner, Nagpur.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Script to render Lucide icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
